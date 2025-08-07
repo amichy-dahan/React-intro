@@ -11,6 +11,8 @@ function App() {
     { name: "Microsoft", revenue: 300 },
     { name: "Google", revenue: 600 }
   ]
+
+  let varr = ['ddd' ,'sss']
   const showCompany = (name, revenue) => {
     return <div id={name}> {name} makes {revenue} every Year  </div>
   }
@@ -38,7 +40,7 @@ function App() {
       <h4 className='ex-title'>Exercise 2</h4>
       <div className="exercise" id="ex-2">
         {
-              getClassName(temp)
+              varr.map(el => <div>{el}</div> )
         }
       </div>
     </div>
