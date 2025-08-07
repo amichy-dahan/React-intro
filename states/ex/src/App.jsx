@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './components/state/Home'
 import Landing from './components/state/Landing';
-import Exercise1 from './components/input/Exercise1'
+import Exercise2 from './components/input/Exercise2'
 
 function App() {
    // ex states --------------------------------->
@@ -40,7 +40,7 @@ function App() {
     <br></br>
     <br></br>
     <br></br>
-    <div><Exercise1/></div>
+    <div><Exercise2/></div>
     </>
   )
 }
