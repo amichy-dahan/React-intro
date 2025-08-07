@@ -3,20 +3,38 @@ import Landing from './Landing';
 
 function Home(props) {
 
-console.log(props)
 
-    return (
-        <>
-            <h1>welcome to the store</h1>
-            <div>
-              {props.store.map((item) =>(
-                <Item  name ={item.item}  price ={item.price}/>
-              ))}
+let newPrices =[]
+  function Discount(props) {
+ 
+    if (props.shouldDiscount) {
+       newPrices = props.store.map((item) => {
+        return (
+          {
+            name: item.item,
+            price: item.price *(1- item.discount )
+          }
+        )
 
-             
-            </div>
-        </>
-    )
+      })
+    }
+    
+  }
+
+  Discount(props)
+
+  return (
+    <>
+      <h1>welcome to the store</h1>
+      <div>
+        {newPrices.map((item) => (
+          <Item name={item.name} price={item.price} />
+        ))}
+
+
+      </div>
+    </>
+  )
 }
 
 
