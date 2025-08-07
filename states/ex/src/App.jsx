@@ -2,11 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
-import Home from './components/Home'
-import Landing from './components/Landing';
+import Home from './components/state/Home'
+import Landing from './components/state/Landing';
+import Exercise1 from './components/input/Exercise1'
 
 function App() {
-  
+   // ex states --------------------------------->
    let data = {
     user: "Robyn",
     store: [
@@ -18,18 +19,28 @@ function App() {
     currentPage: "Home"
   }
 
+
+
+  // ex inputs --------------------------------->
+
+
+
+
+
   return (
     <>
     <div>
       {
-  
          data.currentPage ==="Landing" ?<Landing name = {data.user}  prices ={data.store.map(item => item.price)}/> :
-           <Home store ={data.store}  shouldDiscount ={data.shouldDiscount} />
-           
+           <Home store ={data.store}  shouldDiscount ={data.shouldDiscount} /> 
       }
-        
-        
     </div>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div><Exercise1/></div>
     </>
   )
 }
