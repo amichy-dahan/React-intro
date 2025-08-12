@@ -1,0 +1,24 @@
+.posts {
+  width: 100%;
+  padding: 20px;
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+ justify-content: center;  
+}
+
+.post {
+  width: 200px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  margin: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  word-wrap: break-word;
+  text-align: center;
+}
+.format{
+    display: flex;
+    flex-direction: column;
+}

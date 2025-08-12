@@ -5,6 +5,8 @@ import './App.css'
 import Home from './components/state/Home'
 import Landing from './components/state/Landing';
 import Exercise2 from './components/input/Exercise2'
+import UseEffectEx1 from './components/useEffect/useEffectEx1'
+import UseEffectEx2 from './components/useEffect/UseEffectEx2'
 
 function App() {
    // ex states --------------------------------->
@@ -29,7 +31,7 @@ function App() {
 
   return (
     <>
-    <div>
+    {/* <div>
       {
          data.currentPage ==="Landing" ?<Landing name = {data.user}  prices ={data.store.map(item => item.price)}/> :
            <Home store ={data.store}  shouldDiscount ={data.shouldDiscount} /> 
@@ -40,7 +42,10 @@ function App() {
     <br></br>
     <br></br>
     <br></br>
-    <div><Exercise2/></div>
+    <div><Exercise2/></div> */}
+    <div><UseEffectEx1/></div>
+     <div><UseEffectEx2/></div>
+    
     </>
   )
 }
