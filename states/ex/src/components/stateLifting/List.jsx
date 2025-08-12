@@ -1,8 +1,11 @@
+import Contact from "./contact"
 
-function List({ id, name }) {
+function List({ contacts , changeD}) {
   return (
     <>
-      <div>{id}: {name}</div>
+      {contacts.map(c => (
+        <Contact  name={c}  changeD={changeD}/>
+      ))}
     </>
 
   )

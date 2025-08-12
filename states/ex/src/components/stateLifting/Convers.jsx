@@ -1,9 +1,10 @@
 
 
-function Convers({ back, convo }) {
+function Convers({ convo ,changeD}) {
     return (
         <>
-            <button onClick={back}>Back</button>
+            <button onClick={()=>changeD(null)}>Back</button>
+            
             {convo.map(conv => (
                 <div>
 

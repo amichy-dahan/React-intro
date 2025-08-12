@@ -44,21 +44,19 @@ function Ex2() {
     }, [])
 
 
-    function changeDisplay() {
-        setDisplayConversation(null);
+    function changeDisplay(name) {
+        setDisplayConversation(name);
     }
-
+  const conversationObj = names.find(el => el.with === displayConversation);
 
     return (
         <>
 
             {
                 displayConversation === null ?
-                    names.map((el, index) => (
-                        <div onClick={() => setDisplayConversation(el.convo)}>
-                            <List key={index} id={index} name={el.with} convo={el.convo} />
-                        </div>
-                    )) : <Convers back={changeDisplay} convo = {displayConversation} />
+                    <List contacts={names.map(el => el.with)}  changeD ={changeDisplay} />
+                    :
+                     <Convers changeD ={changeDisplay} convo = {conversationObj.convo }/>
             }
 
         </>
