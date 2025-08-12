@@ -7,6 +7,8 @@ import Landing from './components/state/Landing';
 import Exercise2 from './components/input/Exercise2'
 import UseEffectEx1 from './components/useEffect/useEffectEx1'
 import UseEffectEx2 from './components/useEffect/UseEffectEx2'
+import Ex1 from './components/stateLifting/ex1'
+import Ex2 from './components/stateLifting/Ex2'
 
 function App() {
    // ex states --------------------------------->
@@ -43,8 +45,11 @@ function App() {
     <br></br>
     <br></br>
     <div><Exercise2/></div> */}
-    <div><UseEffectEx1/></div>
-     <div><UseEffectEx2/></div>
+    {/* <div><UseEffectEx1/></div>
+     <div><UseEffectEx2/></div> */}
+     <Ex1/>
+
+     <Ex2/>
     
     </>
   )
